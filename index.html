@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Anvesha Nain | Portfolio</title>
   <meta name="description" content="Portfolio of Anvesha Nain, Computer Science student at Purdue University with experience in AI, data science, product leadership, and analytics." />
 
@@ -219,7 +220,8 @@
     }
 
     .card,
-    .experience-item {
+    .experience-item,
+    .resume-card {
       background: rgba(255, 253, 248, 0.92);
       border: 1px solid var(--border);
       border-radius: 24px;
@@ -322,6 +324,76 @@
       font-size: 0.85rem;
     }
 
+    .resume-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 18px;
+    }
+
+    .resume-header h3 {
+      color: var(--mocha);
+      font-size: 1.55rem;
+      margin-bottom: 6px;
+    }
+
+    .resume-section {
+      margin-top: 26px;
+    }
+
+    .resume-section h4 {
+      color: var(--accent-dark);
+      font-size: 1.08rem;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .resume-entry {
+      margin-bottom: 22px;
+    }
+
+    .resume-entry-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 6px;
+    }
+
+    .resume-entry .role {
+      font-weight: 800;
+      color: var(--mocha);
+    }
+
+    .resume-entry .place {
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    .resume-entry .time {
+      color: var(--accent-dark);
+      font-weight: 800;
+    }
+
+    .resume-entry ul {
+      padding-left: 18px;
+      color: var(--muted);
+    }
+
+    .resume-entry li {
+      margin-bottom: 8px;
+    }
+
+    .resume-skills p {
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+
     footer {
       padding: 28px 0 40px;
       color: var(--muted);
@@ -356,7 +428,8 @@
 
       .card,
       .experience-item,
-      .hero-card {
+      .hero-card,
+      .resume-card {
         padding: 20px;
       }
     }
@@ -367,11 +440,13 @@
   <header>
     <div class="container nav">
       <div class="brand">Anvesha Nain</div>
+
       <nav>
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#resume">Resume</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -383,12 +458,15 @@
       <div class="container hero-grid">
         <div>
           <div class="eyebrow">Computer Science Student at Purdue University</div>
+
           <h1>Serving data, AI, and product ideas with a little latte energy.</h1>
+
           <p>
             I’m Anvesha Nain, a Computer Science student at Purdue University with experience in data science,
             secure AI systems, product leadership, and analytics. I enjoy building thoughtful tools that turn messy
             problems into clear, useful solutions.
           </p>
+
           <div class="button-row">
             <a class="btn btn-primary" href="#experience">View Experience</a>
             <a class="btn btn-secondary" href="https://mail.google.com/mail/?view=cm&fs=1&to=nain.anvesha4@gmail.com" target="_blank">Contact Me</a>
@@ -410,6 +488,7 @@
     <section id="about">
       <div class="container">
         <h2 class="section-title">About</h2>
+
         <p class="section-subtitle">
           Think of this portfolio like a cozy cafe menu: a mix of technical projects, product leadership,
           research experience, and data-driven work brewed carefully across different teams and domains.
@@ -442,6 +521,7 @@
     <section id="experience">
       <div class="container">
         <h2 class="section-title">Experience</h2>
+
         <p class="section-subtitle">
           A warm mix of AI research, data science, bioinformatics, customer segmentation, and product execution.
         </p>
@@ -456,11 +536,13 @@
               </div>
               <div class="date">August 2025 – Present</div>
             </div>
+
             <ul class="bullet-list">
               <li>Lead bi-weekly sprint planning for a secure RAG AI agent focused on enterprise data privacy.</li>
               <li>Use Kanban, Cursor, and Claude to rapidly iterate on code and resolve 10+ critical security vulnerabilities found during red-team testing.</li>
               <li>Create standardized mitigation guides for prompt injection, helping sales teams address enterprise security concerns more consistently.</li>
             </ul>
+
             <div class="tag-row">
               <span class="tag">RAG</span>
               <span class="tag">AI Security</span>
@@ -479,11 +561,13 @@
               </div>
               <div class="date">April 2025 – August 2025</div>
             </div>
+
             <ul class="bullet-list">
               <li>Developed an interactive Tableau dashboard to visualize high-dimensional genomic data for technical and non-technical stakeholders.</li>
               <li>Optimized PyTorch models by monitoring F1-Score and Precision-Recall curves.</li>
               <li>Identified key data imbalances and achieved 85% accuracy across 10,000+ protein samples.</li>
             </ul>
+
             <div class="tag-row">
               <span class="tag">Tableau</span>
               <span class="tag">PyTorch</span>
@@ -501,11 +585,13 @@
               </div>
               <div class="date">August 2024 – May 2025</div>
             </div>
+
             <ul class="bullet-list">
               <li>Implemented a BIRCH clustering algorithm to identify high-value customer segments for targeted marketing strategies.</li>
               <li>Supported a predicted 15% increase in lead conversion through customer segmentation insights.</li>
               <li>Engineered an automated Python and SQL data pipeline that reduced preprocessing runtime by 60%.</li>
             </ul>
+
             <div class="tag-row">
               <span class="tag">Python</span>
               <span class="tag">SQL</span>
@@ -520,6 +606,7 @@
     <section id="projects">
       <div class="container">
         <h2 class="section-title">Projects</h2>
+
         <p class="section-subtitle">
           Selected work across product leadership, accessibility, health tech, AI, and analytics.
         </p>
@@ -531,11 +618,13 @@
             <p style="color: var(--muted); margin-bottom: 12px;">
               A health tech product focused on biometric insights, user experience, and API-driven wellness data.
             </p>
+
             <ul class="bullet-list">
               <li>Established Agile workflows for a cross-functional team of 20 using Jira to track sprint velocity and dependencies.</li>
               <li>Defined the product roadmap and MVP scope based on market gap analysis.</li>
               <li>Integrated Terra and Sahha APIs to deliver actionable biometric insights while balancing technical constraints and user needs.</li>
             </ul>
+
             <p style="margin-top: 14px; color: var(--muted);">
               <strong>Tools:</strong> Agile, Jira, Product Roadmapping, API Integration
             </p>
@@ -547,11 +636,13 @@
             <p style="color: var(--muted); margin-bottom: 12px;">
               An AI-powered learning tool designed to make educational materials more accessible for neurodiverse students.
             </p>
+
             <ul class="bullet-list">
               <li>Identified accessibility gaps through field interviews and market research.</li>
               <li>Led a team of 5 through the full product lifecycle, from Figma wireframes to a deployed learning tool.</li>
               <li>Optimized the AI pipeline using Cursor and Gemini, increasing text simplification accuracy by 35%.</li>
             </ul>
+
             <p style="margin-top: 14px; color: var(--muted);">
               <strong>Tools:</strong> Figma, Cursor, Gemini, Generative AI, Product Management
             </p>
@@ -563,11 +654,13 @@
             <p style="color: var(--muted); margin-bottom: 12px;">
               A custom NLP tool built to streamline consumer sentiment analysis from large-scale survey feedback.
             </p>
+
             <ul class="bullet-list">
               <li>Processed 3,000+ survey responses using Python, Pandas, NLP, and Advanced Excel.</li>
               <li>Leveraged Microsoft Copilot to accelerate development.</li>
               <li>Saved the operations team 40+ hours per cycle and contributed insights tied to a 25% year-over-year increase in attendee satisfaction.</li>
             </ul>
+
             <p style="margin-top: 14px; color: var(--muted);">
               <strong>Tools:</strong> Python, Pandas, NLP, Advanced Excel, Microsoft Copilot
             </p>
@@ -579,6 +672,7 @@
             <p style="color: var(--muted); margin-bottom: 12px;">
               Anvesha’s work sits at the intersection of data science, product strategy, and responsible AI development.
             </p>
+
             <ul class="bullet-list">
               <li>Secure AI systems and red-team mitigation workflows</li>
               <li>Customer segmentation and marketing analytics</li>
@@ -590,9 +684,170 @@
       </div>
     </section>
 
+    <section id="resume">
+      <div class="container">
+        <h2 class="section-title">Resume</h2>
+
+        <p class="section-subtitle">
+          A full resume view with education, experience, project leadership, and technical skills.
+        </p>
+
+        <div class="resume-card">
+          <div class="resume-header">
+            <div>
+              <h3>Anvesha Nain</h3>
+              <p>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nain.anvesha4@gmail.com" target="_blank">
+                  nain.anvesha4@gmail.com
+                </a>
+                ·
+                <a href="tel:7323977879">732-397-7879</a>
+                ·
+                <a href="https://www.linkedin.com/in/anvesha-nain-a14033223/" target="_blank">
+                  LinkedIn
+                </a>
+              </p>
+            </div>
+
+            <div>
+              <a class="btn btn-primary" href="Anvesha_Resume.pdf" target="_blank">
+                View PDF Resume
+              </a>
+            </div>
+          </div>
+
+          <div class="resume-section">
+            <h4>Education</h4>
+
+            <div class="resume-entry">
+              <div class="resume-entry-top">
+                <div>
+                  <div class="role">Purdue University</div>
+                  <div class="place">Bachelor of Science in Computer Science · West Lafayette, IN</div>
+                </div>
+                <div class="time">August 2023 – May 2027</div>
+              </div>
+
+              <ul>
+                <li>Certification: Entrepreneurship and Innovation, Application in Data Science</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="resume-section">
+            <h4>Experience</h4>
+
+            <div class="resume-entry">
+              <div class="resume-entry-top">
+                <div>
+                  <div class="role">Undergraduate Data Scientist</div>
+                  <div class="place">Prediction Guard, Data Mine Corporate Partners · West Lafayette, IN</div>
+                </div>
+                <div class="time">August 2025 – Present</div>
+              </div>
+
+              <ul>
+                <li>Leading bi-weekly sprint planning for a secure RAG AI Agent designed for enterprise data privacy; utilizing Kanban and Cursor/Claude to rapidly iterate on code and resolve 10+ critical security vulnerabilities identified during red-team testing.</li>
+                <li>Driving faster client adoption by creating standardized mitigation guides for prompt injection, enabling the sales team to replicably address security concerns across multiple enterprise accounts.</li>
+              </ul>
+            </div>
+
+            <div class="resume-entry">
+              <div class="resume-entry-top">
+                <div>
+                  <div class="role">Undergraduate Researcher</div>
+                  <div class="place">Kihara Bioinformatics Laboratory · West Lafayette, IN</div>
+                </div>
+                <div class="time">April 2025 – August 2025</div>
+              </div>
+
+              <ul>
+                <li>Developed an interactive Tableau dashboard to visualize high-dimensional genomic data, enabling non-technical and technical stakeholders to explore and interpret research findings.</li>
+                <li>Optimized PyTorch models by monitoring F1-Score and Precision-Recall curves, identifying key data imbalances and achieving 85% accuracy across 10,000+ protein samples.</li>
+              </ul>
+            </div>
+
+            <div class="resume-entry">
+              <div class="resume-entry-top">
+                <div>
+                  <div class="role">Undergraduate Data Scientist</div>
+                  <div class="place">AgReliant Genetics, Data Mine Corporate Partners · West Lafayette, IN</div>
+                </div>
+                <div class="time">August 2024 – May 2025</div>
+              </div>
+
+              <ul>
+                <li>Enabled targeted marketing strategies by implementing a BIRCH clustering algorithm to identify high-value customer segments, resulting in a predicted 15% increase in lead conversion.</li>
+                <li>Engineered an automated data pipeline in Python and SQL to consolidate multiple data sources, reducing preprocessing runtime by 60% and accelerating model delivery.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="resume-section">
+            <h4>Project Leadership</h4>
+
+            <div class="resume-entry">
+              <div class="resume-entry-top">
+                <div>
+                  <div class="role">Spryn - Health Tech App</div>
+                  <div class="place">Agile, Jira, Product Roadmapping, API Integration</div>
+                </div>
+                <div class="time">March 2025 – Present</div>
+              </div>
+
+              <ul>
+                <li>Established Agile workflows for a cross-functional team of 20, utilizing Jira to track sprint velocity, manage dependencies, and ensure 100% data integrity across project boards.</li>
+                <li>Defined the product roadmap and MVP scope based on market gap analysis, integrating Terra/Sahha APIs to deliver actionable biometric insights while balancing technical constraints with user experience goals.</li>
+              </ul>
+            </div>
+
+            <div class="resume-entry">
+              <div class="resume-entry-top">
+                <div>
+                  <div class="role">Snap Study</div>
+                </div>
+                <div class="time">May 2025 – June 2025</div>
+              </div>
+
+              <ul>
+                <li>Identified critical accessibility gaps for neurodiverse students through field interviews and market research, leading a team of 5 through the full product lifecycle from Figma wireframes to a deployed user-centric AI-powered learning tool.</li>
+                <li>Optimized the end-to-end AI pipeline using Cursor and Gemini, increasing text simplification accuracy by 35% to better serve the identified accessibility needs.</li>
+              </ul>
+            </div>
+
+            <div class="resume-entry">
+              <div class="resume-entry-top">
+                <div>
+                  <div class="role">CASO Feedback Analysis Tool</div>
+                  <div class="place">Python, Pandas, NLP, Advanced Excel</div>
+                </div>
+                <div class="time">September 2024</div>
+              </div>
+
+              <ul>
+                <li>Streamlined consumer sentiment analysis by building a custom NLP tool, leveraging Microsoft Copilot for accelerated development, to process 3,000+ survey responses.</li>
+                <li>Saved the operations team 40+ hours per cycle and provided the data-driven insights that directly resulted in a 25% year-over-year increase in attendee satisfaction.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="resume-section resume-skills">
+            <h4>Technical Skills</h4>
+
+            <p><strong>Product and Strategy:</strong> Product Roadmapping, Agile/Scrum, Kanban, Jira, Market Research, Figma, User Stories, Risk Management, Microsoft Office Suite</p>
+
+            <p><strong>Data and Analytics:</strong> SQL, Power BI, Tableau, Python, Excel, Google Analytics, A/B Testing, Snowflake, Customer Segmentation, Data Cleaning</p>
+
+            <p><strong>Development/AI:</strong> Python, C++, Java, REST APIs, AI-Assisted Development, Cursor, Copilot, Claude, Gemini, Generative AI, LLMs, RAG, Prompt Engineering, Agentic AI</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="contact">
       <div class="container">
         <h2 class="section-title">Contact</h2>
+
         <p class="section-subtitle">
           Reach out for collaborations, project opportunities, or a good conversation over coffee.
         </p>
