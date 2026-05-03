@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Anvesha Nain | Portfolio</title>
   <meta name="description" content="Portfolio of Anvesha Nain, Computer Science student at Purdue University with experience in AI, data science, product leadership, and analytics." />
 
@@ -18,7 +17,6 @@
       --cream: #f6e7d1;
       --latte: #ead2b8;
       --mocha: #5a3825;
-      --green: #7e9f6f;
       --border: #ead9c7;
       --shadow: 0 16px 36px rgba(87, 55, 35, 0.12);
       --max-width: 1100px;
@@ -34,26 +32,11 @@
     body {
       font-family: Georgia, "Times New Roman", serif;
       background:
-        radial-gradient(circle at 12% 8%, rgba(255, 226, 190, 0.55) 0, transparent 26%),
-        radial-gradient(circle at 88% 18%, rgba(184, 121, 76, 0.14) 0, transparent 22%),
-        linear-gradient(135deg, rgba(255, 248, 239, 0.96), rgba(250, 239, 225, 0.94)),
+        radial-gradient(circle at top left, #f6dcc0 0, transparent 28%),
+        radial-gradient(circle at bottom right, #ead2b8 0, transparent 30%),
         var(--bg);
       color: var(--text);
       line-height: 1.6;
-      position: relative;
-    }
-
-    body::before {
-      content: "";
-      position: fixed;
-      inset: 0;
-      pointer-events: none;
-      background-image:
-        linear-gradient(rgba(90, 56, 37, 0.025) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(90, 56, 37, 0.025) 1px, transparent 1px);
-      background-size: 34px 34px;
-      opacity: 0.55;
-      z-index: -1;
     }
 
     a {
@@ -117,29 +100,6 @@
 
     .hero {
       padding: 96px 0 72px;
-      position: relative;
-    }
-
-    .hero::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 12%;
-      width: 1px;
-      height: 74px;
-      background: rgba(90, 56, 37, 0.18);
-    }
-
-    .hero::after {
-      content: "";
-      position: absolute;
-      top: 72px;
-      left: calc(12% - 18px);
-      width: 36px;
-      height: 18px;
-      background: rgba(184, 121, 76, 0.22);
-      border-radius: 0 0 999px 999px;
-      box-shadow: 0 18px 42px rgba(255, 204, 142, 0.32);
     }
 
     .hero-grid {
@@ -147,8 +107,6 @@
       grid-template-columns: 1.35fr 1fr;
       gap: 36px;
       align-items: center;
-      position: relative;
-      z-index: 1;
     }
 
     .eyebrow {
@@ -215,8 +173,7 @@
     }
 
     .hero-card {
-      background:
-        linear-gradient(145deg, rgba(255, 253, 248, 0.96), rgba(245, 225, 202, 0.9));
+      background: linear-gradient(145deg, #fffdf8, #f5e1ca);
       border: 1px solid var(--border);
       border-radius: 28px;
       padding: 30px;
@@ -230,34 +187,19 @@
       position: absolute;
       right: 24px;
       top: 18px;
-      font-size: 2.2rem;
-      opacity: 0.18;
-    }
-
-    .hero-card::after {
-      content: "";
-      position: absolute;
-      left: -30px;
-      bottom: -30px;
-      width: 110px;
-      height: 110px;
-      background: rgba(126, 159, 111, 0.13);
-      border-radius: 50%;
+      font-size: 2.4rem;
+      opacity: 0.22;
     }
 
     .hero-card h3 {
       font-size: 1.15rem;
       margin-bottom: 12px;
       color: var(--mocha);
-      position: relative;
-      z-index: 1;
     }
 
     .hero-card ul {
       padding-left: 18px;
       color: var(--muted);
-      position: relative;
-      z-index: 1;
     }
 
     .hero-card li {
@@ -278,33 +220,11 @@
 
     .card,
     .experience-item {
-      background:
-        linear-gradient(180deg, rgba(255, 253, 248, 0.96), rgba(255, 250, 243, 0.94));
+      background: rgba(255, 253, 248, 0.92);
       border: 1px solid var(--border);
       border-radius: 24px;
       padding: 26px;
       box-shadow: var(--shadow);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .card::before,
-    .experience-item::before {
-      content: "";
-      position: absolute;
-      top: 18px;
-      right: 20px;
-      width: 34px;
-      height: 34px;
-      border-radius: 50%;
-      background: rgba(126, 159, 111, 0.09);
-      opacity: 0.8;
-    }
-
-    .card h3,
-    .experience-item h3 {
-      position: relative;
-      z-index: 1;
     }
 
     .about-grid,
@@ -330,8 +250,6 @@
     .bullet-list {
       padding-left: 18px;
       color: var(--muted);
-      position: relative;
-      z-index: 1;
     }
 
     .skills-list li,
@@ -351,8 +269,6 @@
       gap: 16px;
       margin-bottom: 8px;
       flex-wrap: wrap;
-      position: relative;
-      z-index: 1;
     }
 
     .experience-top h3 {
@@ -383,14 +299,12 @@
       flex-wrap: wrap;
       gap: 10px;
       margin-top: 14px;
-      position: relative;
-      z-index: 1;
     }
 
     .tag {
-      background: #f5e6d3;
+      background: var(--cream);
       color: var(--mocha);
-      border: 1px solid #e6cdb6;
+      border: 1px solid var(--border);
       border-radius: 999px;
       padding: 8px 12px;
       font-size: 0.86rem;
@@ -404,25 +318,8 @@
       border-radius: 999px;
       background: var(--cream);
       color: var(--accent-dark);
-      border: 1px solid var(--border);
       font-weight: 800;
       font-size: 0.85rem;
-      position: relative;
-      z-index: 1;
-    }
-
-    .project-note {
-      color: var(--muted);
-      margin-bottom: 12px;
-      position: relative;
-      z-index: 1;
-    }
-
-    .tools {
-      margin-top: 14px;
-      color: var(--muted);
-      position: relative;
-      z-index: 1;
     }
 
     footer {
@@ -470,7 +367,6 @@
   <header>
     <div class="container nav">
       <div class="brand">Anvesha Nain</div>
-
       <nav>
         <ul>
           <li><a href="#about">About</a></li>
@@ -487,15 +383,12 @@
       <div class="container hero-grid">
         <div>
           <div class="eyebrow">Computer Science Student at Purdue University</div>
-
           <h1>Serving data, AI, and product ideas with a little latte energy.</h1>
-
           <p>
             I’m Anvesha Nain, a Computer Science student at Purdue University with experience in data science,
             secure AI systems, product leadership, and analytics. I enjoy building thoughtful tools that turn messy
             problems into clear, useful solutions.
           </p>
-
           <div class="button-row">
             <a class="btn btn-primary" href="#experience">View Experience</a>
             <a class="btn btn-secondary" href="mailto:nain.anvesha4@gmail.com">Contact Me</a>
@@ -503,7 +396,7 @@
         </div>
 
         <div class="hero-card">
-          <h3>Featured Blend</h3>
+          <h3>Today’s Specials</h3>
           <ul>
             <li>Secure RAG AI agents for enterprise data privacy</li>
             <li>Dashboards and analytics with Tableau, Power BI, SQL, Python, and Excel</li>
@@ -517,7 +410,6 @@
     <section id="about">
       <div class="container">
         <h2 class="section-title">About</h2>
-
         <p class="section-subtitle">
           Think of this portfolio like a cozy cafe menu: a mix of technical projects, product leadership,
           research experience, and data-driven work brewed carefully across different teams and domains.
@@ -526,7 +418,6 @@
         <div class="about-grid">
           <div class="card">
             <span class="menu-label">Education Blend</span>
-
             <h3 style="margin-bottom: 12px;">Education</h3>
             <p><strong>Purdue University</strong></p>
             <p>Bachelor of Science in Computer Science</p>
@@ -536,7 +427,6 @@
 
           <div class="card">
             <span class="menu-label">Skill Roast</span>
-
             <h3 style="margin-bottom: 12px;">Core Skills</h3>
             <ul class="skills-list">
               <li>Product Roadmapping, Agile/Scrum, Kanban, Jira, Market Research, Figma, User Stories</li>
@@ -552,7 +442,6 @@
     <section id="experience">
       <div class="container">
         <h2 class="section-title">Experience</h2>
-
         <p class="section-subtitle">
           A warm mix of AI research, data science, bioinformatics, customer segmentation, and product execution.
         </p>
@@ -567,13 +456,11 @@
               </div>
               <div class="date">August 2025 – Present</div>
             </div>
-
             <ul class="bullet-list">
               <li>Lead bi-weekly sprint planning for a secure RAG AI agent focused on enterprise data privacy.</li>
               <li>Use Kanban, Cursor, and Claude to rapidly iterate on code and resolve 10+ critical security vulnerabilities found during red-team testing.</li>
               <li>Create standardized mitigation guides for prompt injection, helping sales teams address enterprise security concerns more consistently.</li>
             </ul>
-
             <div class="tag-row">
               <span class="tag">RAG</span>
               <span class="tag">AI Security</span>
@@ -592,13 +479,11 @@
               </div>
               <div class="date">April 2025 – August 2025</div>
             </div>
-
             <ul class="bullet-list">
               <li>Developed an interactive Tableau dashboard to visualize high-dimensional genomic data for technical and non-technical stakeholders.</li>
               <li>Optimized PyTorch models by monitoring F1-Score and Precision-Recall curves.</li>
               <li>Identified key data imbalances and achieved 85% accuracy across 10,000+ protein samples.</li>
             </ul>
-
             <div class="tag-row">
               <span class="tag">Tableau</span>
               <span class="tag">PyTorch</span>
@@ -616,13 +501,11 @@
               </div>
               <div class="date">August 2024 – May 2025</div>
             </div>
-
             <ul class="bullet-list">
               <li>Implemented a BIRCH clustering algorithm to identify high-value customer segments for targeted marketing strategies.</li>
               <li>Supported a predicted 15% increase in lead conversion through customer segmentation insights.</li>
               <li>Engineered an automated Python and SQL data pipeline that reduced preprocessing runtime by 60%.</li>
             </ul>
-
             <div class="tag-row">
               <span class="tag">Python</span>
               <span class="tag">SQL</span>
@@ -637,7 +520,6 @@
     <section id="projects">
       <div class="container">
         <h2 class="section-title">Projects</h2>
-
         <p class="section-subtitle">
           Selected work across product leadership, accessibility, health tech, AI, and analytics.
         </p>
@@ -645,69 +527,58 @@
         <div class="project-grid">
           <div class="card">
             <span class="menu-label">Signature Brew</span>
-
             <h3 style="margin-bottom: 10px;">Spryn - Health Tech App</h3>
-            <p class="project-note">
+            <p style="color: var(--muted); margin-bottom: 12px;">
               A health tech product focused on biometric insights, user experience, and API-driven wellness data.
             </p>
-
             <ul class="bullet-list">
               <li>Established Agile workflows for a cross-functional team of 20 using Jira to track sprint velocity and dependencies.</li>
               <li>Defined the product roadmap and MVP scope based on market gap analysis.</li>
               <li>Integrated Terra and Sahha APIs to deliver actionable biometric insights while balancing technical constraints and user needs.</li>
             </ul>
-
-            <p class="tools">
+            <p style="margin-top: 14px; color: var(--muted);">
               <strong>Tools:</strong> Agile, Jira, Product Roadmapping, API Integration
             </p>
           </div>
 
           <div class="card">
             <span class="menu-label">Sweet Pick</span>
-
             <h3 style="margin-bottom: 10px;">Snap Study</h3>
-            <p class="project-note">
+            <p style="color: var(--muted); margin-bottom: 12px;">
               An AI-powered learning tool designed to make educational materials more accessible for neurodiverse students.
             </p>
-
             <ul class="bullet-list">
               <li>Identified accessibility gaps through field interviews and market research.</li>
               <li>Led a team of 5 through the full product lifecycle, from Figma wireframes to a deployed learning tool.</li>
               <li>Optimized the AI pipeline using Cursor and Gemini, increasing text simplification accuracy by 35%.</li>
             </ul>
-
-            <p class="tools">
+            <p style="margin-top: 14px; color: var(--muted);">
               <strong>Tools:</strong> Figma, Cursor, Gemini, Generative AI, Product Management
             </p>
           </div>
 
           <div class="card">
             <span class="menu-label">House Favorite</span>
-
             <h3 style="margin-bottom: 10px;">CASO Feedback Analysis Tool</h3>
-            <p class="project-note">
+            <p style="color: var(--muted); margin-bottom: 12px;">
               A custom NLP tool built to streamline consumer sentiment analysis from large-scale survey feedback.
             </p>
-
             <ul class="bullet-list">
               <li>Processed 3,000+ survey responses using Python, Pandas, NLP, and Advanced Excel.</li>
               <li>Leveraged Microsoft Copilot to accelerate development.</li>
               <li>Saved the operations team 40+ hours per cycle and contributed insights tied to a 25% year-over-year increase in attendee satisfaction.</li>
             </ul>
-
-            <p class="tools">
+            <p style="margin-top: 14px; color: var(--muted);">
               <strong>Tools:</strong> Python, Pandas, NLP, Advanced Excel, Microsoft Copilot
             </p>
           </div>
 
           <div class="card">
             <span class="menu-label">Cafe Notes</span>
-
             <h3 style="margin-bottom: 10px;">Technical Focus Areas</h3>
-            <p class="project-note">
+            <p style="color: var(--muted); margin-bottom: 12px;">
               Anvesha’s work sits at the intersection of data science, product strategy, and responsible AI development.
             </p>
-
             <ul class="bullet-list">
               <li>Secure AI systems and red-team mitigation workflows</li>
               <li>Customer segmentation and marketing analytics</li>
@@ -722,7 +593,6 @@
     <section id="contact">
       <div class="container">
         <h2 class="section-title">Contact</h2>
-
         <p class="section-subtitle">
           Reach out for collaborations, project opportunities, or a good conversation over coffee.
         </p>
@@ -749,9 +619,8 @@
 
   <footer>
     <div class="container">
-      <p>© 2026 Anvesha Nain · thoughtfully brewed with data, design, and AI</p>
+      <p>© 2026 Anvesha Nain · brewed with data, design, and AI</p>
     </div>
   </footer>
 </body>
 </html>
-
